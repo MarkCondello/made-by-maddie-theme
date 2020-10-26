@@ -1,0 +1,25 @@
+//@import './globals/fonts';
+
+ 
+@import './globals/palette';
+
+@import 'foundation';
+
+@import './globals/mixins';
+@import './globals/reusable';
+@import './globals/helpers';
+@import './globals/typography';
+@import './globals/category-container';
+
+@import "pages/home";
+//@import "pages/single";
+
+@import "sections/site-header";
+@import "sections/off-canvas";
+
+@import "components/panel";
+@import "components/hamburger";
+
+// Import your custom styles
+
+//@import "global";

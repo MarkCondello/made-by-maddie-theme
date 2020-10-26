@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>LinkedIn</title>
+    <defs>
+        <polygon id="path-1" points="0 51.5 51.5 51.5 51.5 0 0 0"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu_Hover_v1" transform="translate(-899.000000, -880.000000)">
+            <g id="Hover-Menu" transform="translate(656.000000, 103.000000)">
+                <g id="LinkedIn" transform="translate(243.000000, 777.000000)">
+                    <path d="M20.1223,42.9473 L27.6263,42.9473 L27.6263,30.3403 C27.6263,29.6663 27.6753,28.9903 27.8733,28.5093 C28.4153,27.1603 29.6503,25.7643 31.7243,25.7643 C34.4383,25.7643 35.5253,27.8353 35.5253,30.8703 L35.5253,42.9473 L43.0293,42.9473 L43.0293,30.0023 C43.0293,23.0673 39.3273,19.8403 34.3903,19.8403 C30.3423,19.8403 28.5643,22.1033 27.5773,23.6443 L27.6263,23.6443 L27.6263,20.3703 L20.1223,20.3703 C20.2203,22.4883 20.1223,42.9473 20.1223,42.9473 L20.1223,42.9473 Z M12.2183,17.2873 C14.8343,17.2873 16.4633,15.5533 16.4633,13.3873 C16.4143,11.1713 14.8343,9.4863 12.2683,9.4863 C9.6993,9.4863 8.0213,11.1713 8.0213,13.3873 C8.0213,15.5533 9.6503,17.2873 12.1683,17.2873 L12.2173,17.2873 L12.2183,17.2873 Z M15.9693,42.9473 L15.9693,20.3693 L8.4643,20.3693 L8.4643,42.9473 L15.9693,42.9473 L15.9693,42.9473 Z" id="Stroke-1" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <polygon id="Stroke-3" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="0.75 50.75 50.75 50.75 50.75 0.75 0.75 0.75"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

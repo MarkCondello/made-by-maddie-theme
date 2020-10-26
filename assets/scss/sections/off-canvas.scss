@@ -1,0 +1,69 @@
+#made-off-canvas {
+    background-size: cover;
+    background-position: center center;
+    
+    &:before {
+        content: '';
+        background-color: rgba(13, 17, 55, .7);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #made-off-canvas-nav {
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        
+        li{  
+            padding: 1rem 0;
+            a {
+                font-family: 'adobe-garamond-pro-regular'; 
+                font-size: 3rem;
+                padding:0;
+                color: $white;
+                position: relative;
+                display: inline-block;
+                
+                &:focus {
+                    outline: none;
+                }
+
+                &.active {
+                    font-weight: bold;
+                    
+                    &:after {
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        background-color: $white;
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                    }
+                }
+            }
+            
+      
+            &.socials {
+                margin-top: .7rem;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
+}
+
+.off-canvas-content {
+    .content {
+        min-height: 100vh;
+    }
+}

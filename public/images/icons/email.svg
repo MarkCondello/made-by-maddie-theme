@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mail</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Menu_Hover_v1" transform="translate(-971.000000, -881.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Hover-Menu" transform="translate(656.000000, 103.000000)">
+                <g id="Social-Media-&amp;-Contact" transform="translate(243.000000, 777.000000)">
+                    <g id="Mail" transform="translate(72.000000, 1.000000)">
+                        <polygon id="Stroke-1" points="0.75 50.75 50.75 50.75 50.75 0.75 0.75 0.75"></polygon>
+                        <polygon id="Stroke-3" points="8.247 37.419 43.254 37.419 43.254 14.081 8.247 14.081"></polygon>
+                        <g id="Group-10" transform="translate(8.000000, 13.500000)">
+                            <path d="M0.2463,0.5811 L14.0253,13.4411 C16.1223,15.3991 19.3773,15.3991 21.4743,13.4411 L35.2533,0.5811" id="Stroke-4"></path>
+                            <line x1="12.3171" y1="11.8481" x2="0.2461" y2="23.9191" id="Stroke-6"></line>
+                            <line x1="35.2536" y1="23.9189" x2="23.1826" y2="11.8479" id="Stroke-8"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
