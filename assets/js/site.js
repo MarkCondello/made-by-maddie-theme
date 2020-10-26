@@ -20,7 +20,6 @@ $(() => {
                 $(this).addClass('open');
             }
 
-            //creating issues on mobile
             if(offCanvasIsOpen && isHomePage){
                 $(content).show()
             } else {
@@ -76,13 +75,13 @@ $(() => {
 
         onLeave(){
             checkActive();
-            console.log("Left the section")
+           // console.log("Left the section")
         },
-        //onload
-        afterRender: function(){
-            var pluginContainer = this;
-            //alert("The resulting DOM structure is ready");
-        }
+        // //onload
+        // afterRender: function(){
+        //     var pluginContainer = this;
+        //     //alert("The resulting DOM structure is ready");
+        // }
     });
     
     function checkActive(){
@@ -112,7 +111,6 @@ $(() => {
     checkActive();
  
     if(!isHomePage){
- 
         //not sure if this is working properly
         function mobileFullWidthImageHeights(){
             let windowWidth = $(window).width();
@@ -141,9 +139,5 @@ $(() => {
                 $(hamburger).removeClass('dark');  
             }
         });
-
     }
- 
 });
-
- 
