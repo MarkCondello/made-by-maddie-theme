@@ -9,6 +9,10 @@
     @include breakpoint (large up){
         padding: 0 $border-gap;
     }
+
+    @include breakpoint (medium down){
+        height: 75px;
+    }
  
     .-inner {
         display: flex;

@@ -11628,6 +11628,14 @@ h3 {
   }
 }
 
+@media print, screen and (max-width: 63.99875em) {
+  .category-container,
+  .category-container-bottom,
+  .line-container-bottom {
+    height: 75px;
+  }
+}
+
 .category-container .-inner,
 .category-container-bottom .-inner,
 .line-container-bottom .-inner {

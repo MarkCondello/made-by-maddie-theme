@@ -21,11 +21,11 @@ $(() => {
             }
 
             //creating issues on mobile
-            // if(offCanvasIsOpen && isHomePage){
-            //     $(content).show()
-            // } else {
-            //     $(content).hide();
-            // }
+            if(offCanvasIsOpen && isHomePage){
+                $(content).show()
+            } else {
+                $(content).hide();
+            }
         });
     }
 
