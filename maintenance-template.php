@@ -9,7 +9,7 @@
 
 get_header(); 
 ?>
-	<div class="maintenance-page" style="height: 100vh; padding-top: 10vh; background-image: url('<?= get_template_directory_uri() . '/public/images/photos/madeleine-orneus.png' ?>')">
+	<div style="height: 100vh; padding-top: 10vh; background-image: url('<?= get_template_directory_uri() . '/public/images/photos/madeleine-orneus.png' ?>')">
 		<div class="grid-x align-center">
 		    <main class="main small-10 medium-7 cell text-center" role="main">
 				<img src="<?= get_template_directory_uri() . '/public/images/logos/made-logo.svg' ?>" alt="Made by Maddie logo." />
