@@ -11547,10 +11547,6 @@ usage:
   background-color: #ffffff;
 }
 
-.admin-bg {
-  background-color: #f3f4f6;
-}
-
 .circle {
   width: 8px;
   height: 8px;
@@ -11607,6 +11603,10 @@ h3 {
 
 .italic {
   font-style: italic;
+}
+
+.text-white {
+  color: #ffffff;
 }
 
 .category-container,

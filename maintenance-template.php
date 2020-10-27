@@ -1,24 +1,26 @@
 <?php
 /**
- * The main template file
+ * The maintenance template file
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  */
 
-// use Timber\Timber;
-
 get_header(); 
 ?>
-	<div class="content">
-		<div class="inner-content grid-x grid-margin-x grid-padding-x">
-		    <main class="main small-12 cell" role="main">
-				<h1>Down for maintenance. </h1>
-				<p>Back soon...</p>
- 
-																								
-		    </main> <!-- end #main --> 
-		</div> <!-- end #inner-content -->
-	</div> <!-- end #content -->
+	<div class="maintenance-page" style="height: 100vh; padding-top: 10vh; background-image: url('<?= get_template_directory_uri() . '/public/images/photos/madeleine-orneus.png' ?>')">
+		<div class="grid-x align-center">
+		    <main class="main small-10 medium-7 cell text-center" role="main">
+				<img src="<?= get_template_directory_uri() . '/public/images/logos/made-logo.svg' ?>" alt="Made by Maddie logo." />
+				<h1 class="text-white m-t-3">Down for scheduled maintenance. </h1>
+				<p class="text-white">We'll be back soon...</p>														
+		    </main>  
+		</div>  
+	</div> 
 <?php get_footer(); ?>
+<style>
+	.hamburger {
+		display: none;
+	}
+</style>

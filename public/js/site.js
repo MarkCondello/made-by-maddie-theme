@@ -114,8 +114,7 @@ $(function () {
         $(this).removeClass('open');
       } else {
         $(this).addClass('open');
-      } //creating issues on mobile
-
+      }
 
       if (offCanvasIsOpen && isHomePage) {
         $(content).show();
@@ -164,13 +163,13 @@ $(function () {
     //remove full page at breakpoint
     //responsiveWidth: 768,
     onLeave: function onLeave() {
-      checkActive();
-      console.log("Left the section");
-    },
-    //onload
-    afterRender: function afterRender() {
-      var pluginContainer = this; //alert("The resulting DOM structure is ready");
-    }
+      checkActive(); // console.log("Left the section")
+    } // //onload
+    // afterRender: function(){
+    //     var pluginContainer = this;
+    //     //alert("The resulting DOM structure is ready");
+    // }
+
   });
 
   function checkActive() {

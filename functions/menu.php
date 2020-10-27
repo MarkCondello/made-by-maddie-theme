@@ -107,12 +107,11 @@ function new_nav_menu_items($items) {
 		</li>';
 		// ToDo: Add icons here
 	$socialLinks = '<li class="socials">
-		<a href="#" target="_blank" nofollow noreferrer>
+		<a href="https://www.linkedin.com/in/madeleine-%C3%B6rn%C3%A9us-269bb599/" target="_blank" nofollow noreferrer>
 			<img src="' . get_template_directory_uri() . '/public/images/icons/linked-in.svg" alt="Linked In icon."/>
 		</a>
 		<a href="#" target="_blank" nofollow noreferrer>
 			<img src="' . get_template_directory_uri() . '/public/images/icons/email.svg" alt="Email icon."/>
-
 		</a>
 	</li>';
 

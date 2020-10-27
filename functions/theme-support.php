@@ -1,16 +1,16 @@
 <?php
 
-// add_filter( 'template_include', 'show_maintenance_page', 99 );
-// function show_maintenance_page( $template ) {
-//     if ( !current_user_can( 'edit_themes' ) || !is_user_logged_in() ){
-//         $new_template = locate_template( array( 'maintenance-template.php' ) );
-//         if ( !empty( $new_template ) ) {
-//             return $new_template;
-//         }
-// 	}
+//add_filter( 'template_include', 'show_maintenance_page', 99 );
+function show_maintenance_page( $template ) {
+    if ( !current_user_can( 'edit_themes' ) || !is_user_logged_in() ){
+        $new_template = locate_template( array( 'maintenance-template.php' ) );
+        if ( !empty( $new_template ) ) {
+            return $new_template;
+        }
+	}
 	
-// 	return $template;
-// }
+	return $template;
+}
 	
 // Adding WP Functions & Theme Support
 function joints_theme_support() {

@@ -7,8 +7,6 @@
  * It is used to display a page when nothing more specific matches a query.
  */
 
-// use Timber\Timber;
-
 get_header(); 
 ?>
 	<div class="content">
