@@ -1,8 +1,10 @@
 import './wp-foundation';
+const gsap = require('gsap');
 
 $(() => {
     //only need foundation for offcanvas
     const offCanvas = $("#made-off-canvas").foundation();
+    let tl = new gsap.TimelineLite({defaults: { duration: .75 }});
 
     let isHomePage = $('body').hasClass('home'),
     content = $(".section h1, .section h2, .section h3, .section p, .section .logo"),
@@ -27,7 +29,6 @@ $(() => {
             }
         });
     }
-
 
 
     let anchorLinks = [];
@@ -75,7 +76,6 @@ $(() => {
 
         onLeave(){
             checkActive();
-           // console.log("Left the section")
         },
         // //onload
         // afterRender: function(){
@@ -86,25 +86,43 @@ $(() => {
     
     function checkActive(){
         if(isHomePage){
-            setTimeout(function(){ 
-                //check which section is active
-                let panels = $("#fullpage .section"),
-                hamburger = $('.hamburger');
-            
-                $(panels).each((index, panel)=>{
+            let panels = $("#fullpage .section"),
+            hamburger = $('.hamburger');
+            function isCategoryPanel(anchor){
+                return anchor !== 'home' && anchor !== 'about-me';
+            }
+            function panelIsActive(panel){
+                return $(panel).hasClass('active');
+            }
 
-                    if ($(panel).hasClass('active')){
-                        let anchor = $(panel).data('anchor');
-                        if(anchor !== 'home' && anchor !== 'about-me'){
+            setTimeout(function(){ 
+                $(panels).each((index, panel)=>{
+                    let anchor = $(panel).data('anchor');
+                    if (panelIsActive(panel)){
+                        if(isCategoryPanel(anchor)){
                             $(hamburger).addClass('dark');
-                         
                         } else {
                             $(hamburger).removeClass('dark');  
                         }
                     }
-                })
-
+                });
             }, 500);
+
+            // $(panels).each((index, panel)=>{
+            //     let anchor = $(panel).data('anchor');
+            //     if(isCategoryPanel(anchor)){
+            //         let primaryImage = $(panel).find('.primary-image'),
+            //         secondaryImage = $(panel).find('.secondary-image');
+
+            //         //  if(panelIsActive(panel)){
+            //         //     tl.from(primaryImage, { x: '0%', ease: 'bounce' });
+            //         //     tl.from(secondaryImage, { x: '0%', ease: 'bounce' }).delay(0);
+            //         // } else {
+            //         //     tl.from(primaryImage, { x: '-100%', ease: 'bounce' });
+            //         //     tl.from(secondaryImage, { x: '100%', ease: 'bounce' }).delay(0);
+            //         // }
+            //     }
+            // });
         } 
     }
     //onload
