@@ -1,6 +1,6 @@
 <?php
 
-//add_filter( 'template_include', 'show_maintenance_page', 99 );
+add_filter( 'template_include', 'show_maintenance_page', 99 );
 function show_maintenance_page( $template ) {
     if ( !current_user_can( 'edit_themes' ) || !is_user_logged_in() ){
         $new_template = locate_template( array( 'maintenance-template.php' ) );

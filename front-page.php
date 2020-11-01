@@ -11,9 +11,8 @@
 get_header(); ?>
  
 <div id="fullpage" class="content">
-	<?php if (have_posts()) :  ?>
-	
-	<?php while (have_posts()) : the_post(); ?>
+	<?php if (have_posts() ) :  ?>
+ 	<?php while (have_posts()) : the_post(); ?>
 			<?php the_content(); ?>
 			 <!-- To see additional archive styles, visit the /parts directory -->			 
 		 <?php endwhile; ?>	

@@ -168,6 +168,8 @@ $(function () {
     navigation: true,
     css3: true,
     keyboardScrolling: true,
+    fitToSection: true,
+    paddingTop: 200,
     //remove full page at breakpoint
     //responsiveWidth: 768,
     onLeave: function onLeave() {
@@ -221,9 +223,8 @@ $(function () {
       // });
     }
   } //onload
+  // checkActive();
 
-
-  checkActive();
 
   if (!isHomePage) {
     //not sure if this is working properly
