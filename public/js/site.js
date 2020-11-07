@@ -168,6 +168,8 @@ $(function () {
     navigation: true,
     css3: true,
     keyboardScrolling: true,
+    fitToSection: true,
+    paddingTop: 200,
     //remove full page at breakpoint
     //responsiveWidth: 768,
     onLeave: function onLeave() {
@@ -221,9 +223,8 @@ $(function () {
       // });
     }
   } //onload
+  // checkActive();
 
-
-  checkActive();
 
   if (!isHomePage) {
     //not sure if this is working properly
@@ -5640,8 +5641,8 @@ TweenMaxWithCSS = gsapWithCSS.core.Tween;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/dcodegroup/Mark/sandbox/made/wp-content/themes/made-theme/assets/js/site.js */"./assets/js/site.js");
-module.exports = __webpack_require__(/*! /home/dcodegroup/Mark/sandbox/made/wp-content/themes/made-theme/assets/scss/site.scss */"./assets/scss/site.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/made-by-madddie/wp-content/themes/made-theme/assets/js/site.js */"./assets/js/site.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/made-by-madddie/wp-content/themes/made-theme/assets/scss/site.scss */"./assets/scss/site.scss");
 
 
 /***/ })

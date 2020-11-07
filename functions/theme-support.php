@@ -8,7 +8,6 @@ function show_maintenance_page( $template ) {
             return $new_template;
         }
 	}
-	
 	return $template;
 }
 	

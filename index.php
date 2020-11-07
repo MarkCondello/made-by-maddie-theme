@@ -19,7 +19,6 @@ get_header();
 				<?php while (have_posts()) : the_post(); ?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php// get_template_part( 'parts/loop', 'archive' ); ?>
 				    
 				<?php endwhile; ?>	
 
