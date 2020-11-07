@@ -14,7 +14,7 @@ get_header();
 		    <main class="main small-10 medium-7 cell text-center" role="main">
 				<img src="<?= get_template_directory_uri() . '/public/images/logos/made-logo.svg' ?>" alt="Made by Maddie logo." />
 				<h1 class="text-white m-t-3">Down for scheduled maintenance. </h1>
-				<p class="text-white">If you need to contact me, shoot me an email <a style="color: #fff; text-decoration: underline;" href="mailto:hi@madebymadeleine.com.au">here</a>.</p>														
+				<p class="text-white">If you need to contact me, shoot me an email <a href="mailto:hi@madebymadeleine.com.au">here</a>.</p>														
 		    </main>  
 		</div>  
 	</div> 
