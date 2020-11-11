@@ -33,8 +33,10 @@
                     outline: none;
                 }
 
+                &:hover,
                 &.active {
                     font-weight: bold;
+                    text-decoration: none;
                     
                     &:after {
                         content: '';

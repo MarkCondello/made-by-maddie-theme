@@ -1,11 +1,9 @@
 import './wp-foundation';
-const gsap = require('gsap');
-
+ 
 $(() => {
     //only need foundation for offcanvas
     const offCanvas = $("#made-off-canvas").foundation();
-    let tl = new gsap.TimelineLite({defaults: { duration: .75 }});
-
+ 
     let isHomePage = $('body').hasClass('home'),
     content = $(".section h1, .section h2, .section h3, .section p, .section .logo"),
     hamburger = $('.hamburger');
@@ -110,22 +108,6 @@ $(() => {
                     }
                 });
             }, 500);
-
-            // $(panels).each((index, panel)=>{
-            //     let anchor = $(panel).data('anchor');
-            //     if(isCategoryPanel(anchor)){
-            //         let primaryImage = $(panel).find('.primary-image'),
-            //         secondaryImage = $(panel).find('.secondary-image');
-
-            //         //  if(panelIsActive(panel)){
-            //         //     tl.from(primaryImage, { x: '0%', ease: 'bounce' });
-            //         //     tl.from(secondaryImage, { x: '0%', ease: 'bounce' }).delay(0);
-            //         // } else {
-            //         //     tl.from(primaryImage, { x: '-100%', ease: 'bounce' });
-            //         //     tl.from(secondaryImage, { x: '100%', ease: 'bounce' }).delay(0);
-            //         // }
-            //     }
-            // });
         } 
     }
     //onload
@@ -160,5 +142,25 @@ $(() => {
                 $(hamburger).removeClass('dark');  
             }
         });
+    } else {
+        let mediaContainers = $('.media-container');
+
+      $(mediaContainers).each((i, mediaContainer) => {
+
+            let anchors = $(mediaContainer).find('a');
+
+            $(anchors).each((i, el)=>{
+                    let sibling = $(el).siblings('a');
+
+                 $(el).on('mouseover', function(){
+                     $(sibling).addClass('lose-focus');
+                 });
+
+                $(el).on('mouseout', function(){
+                    $(sibling).removeClass('lose-focus');
+                });
+            })
+        })
+
     }
 });
