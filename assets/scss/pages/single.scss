@@ -1,0 +1,12 @@
+.single {
+
+    @include breakpoint(medium down){
+        .full-width-image-block {
+            display: none;
+
+            &:first-of-type {
+                display: block;
+            }
+        }
+    }
+}

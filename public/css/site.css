@@ -11707,6 +11707,16 @@ body.home .category-container-bottom .-inner div.line {
   background-color: #0D1137;
 }
 
+@media print, screen and (max-width: 63.99875em) {
+  .single .full-width-image-block {
+    display: none;
+  }
+
+  .single .full-width-image-block:first-of-type {
+    display: block;
+  }
+}
+
 .site-header {
   position: fixed;
   top: 0;

@@ -298,8 +298,8 @@ jQuery(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/dcodegroup/Mark/sandbox/made/wp-content/themes/made-theme/assets/js/site.js */"./assets/js/site.js");
-module.exports = __webpack_require__(/*! /home/dcodegroup/Mark/sandbox/made/wp-content/themes/made-theme/assets/scss/site.scss */"./assets/scss/site.scss");
+__webpack_require__(/*! /home/vagrant/code/made-by-maddie/wp-content/themes/made-theme/assets/js/site.js */"./assets/js/site.js");
+module.exports = __webpack_require__(/*! /home/vagrant/code/made-by-maddie/wp-content/themes/made-theme/assets/scss/site.scss */"./assets/scss/site.scss");
 
 
 /***/ })
