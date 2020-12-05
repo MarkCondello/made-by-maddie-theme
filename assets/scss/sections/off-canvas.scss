@@ -21,6 +21,7 @@
         
         li{  
             padding: 1rem 0;
+
             a {
                 font-family: 'adobe-garamond-pro-regular'; 
                 font-size: 3rem;
@@ -58,6 +59,17 @@
 
                 a {
                     margin: 0 .5rem;
+                }
+            }
+            @include breakpoint(medium down){
+                padding: .5rem 0;
+ 
+                &.socials {
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 2rem;
                 }
             }
         }

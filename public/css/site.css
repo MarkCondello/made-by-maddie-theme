@@ -11801,6 +11801,20 @@ body.home .category-container-bottom .-inner div.line {
   margin: 0 .5rem;
 }
 
+@media print, screen and (max-width: 63.99875em) {
+  #made-off-canvas #made-off-canvas-nav li {
+    padding: .5rem 0;
+  }
+
+  #made-off-canvas #made-off-canvas-nav li.socials {
+    margin: 0;
+  }
+
+  #made-off-canvas #made-off-canvas-nav li a {
+    font-size: 2rem;
+  }
+}
+
 .off-canvas-content .content {
   min-height: 100vh;
 }
